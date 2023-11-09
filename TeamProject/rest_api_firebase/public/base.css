@@ -1,0 +1,188 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body{
+    background-color: rgba(209, 209, 209, 0.685);
+  }
+  summary{
+    width: 200px;
+    margin-bottom: 20px;
+    scroll-behavior: smooth;
+  }
+  .navfix  {
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  body {
+    font-family: Arial;
+  }
+  details {
+  border-radius: 0.5rem;
+  margin: 1rem ;
+  transition: 50ms;
+  background-color: rgba(209, 209, 209, 0.685);
+  width: 65%;
+  
+}
+details[open] {
+    padding-bottom: 1em;
+}  
+
+label {
+  color: green;
+  background: palegoldenrod;
+}
+summary::before,
+summary::after {
+    transition: 200ms;
+  }
+
+summary:first-child {
+  color: rgb(34, 34, 34);
+}
+
+@layer markers {
+  summary {
+  position: relative;
+}
+
+summary::before,
+summary::after {
+  content: '';
+}
+summary::before,
+summary::after {
+    width: .75em;
+    height: 0;
+    border-bottom: 2px solid;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    transform: translateY(-50%);
+  }
+summary::after {
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+}
+[open] summary::after {
+  transform: rotate(0deg);
+}
+}
+.help-tip{
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  text-align: center;
+  
+  background-color: darkgray;
+  
+  border-radius: 50%;
+  
+  width: 24px;
+  
+  height: 24px;
+  
+  font-size: 14px;
+  
+  line-height: 26px;
+  
+  cursor: default;
+  
+  }
+  
+.help-tip:before{
+  
+  content:'?';
+  
+  font-weight: bold;
+  
+  color:#fff;
+  
+  } 
+.help-tip:hover p{
+  
+  display:block;
+  
+  transform-origin: 100% 0%;
+  
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+  
+  animation: fadeIn 0.3s ease-in-out;
+  
+  
+}
+  
+.help-tip p{
+  
+  display: none;
+  
+  text-align: left;
+  
+  background-color: #1E2021;
+  
+  padding: 20px;
+  
+  width: 300px;
+  
+  position: absolute;
+  
+  border-radius: 3px;
+  
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  
+  right: -4px;
+  
+  color: #FFF;
+  
+  font-size: 13px;
+  
+  line-height: 1.4;
+  
+  }
+.help-tip p:before{
+  
+  position: absolute;
+  
+  content: '';
+  
+  width:0;
+  
+  height: 0;
+  
+  border:6px solid transparent;
+  
+  border-bottom-color:#1E2021;
+  
+  right:10px;
+  
+  top:-12px;
+  
+  }
+.help-tip p:after{
+  
+  width:100%;
+  
+  height:40px;
+  
+  content:'';
+  
+  position: absolute;
+  
+  top:-40px;
+  
+  left:0;
+  
+}
+.page-top {
+  position: fixed;
+  bottom: 20px;
+  right: calc(28% - 230px);
+  width: 60px;
+  height: 60px;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

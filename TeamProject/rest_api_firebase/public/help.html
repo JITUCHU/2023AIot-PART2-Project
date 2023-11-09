@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    body{
+      background-color: rgba(209, 209, 209, 0.685);
+      font-family: Arial;
+    }
+   .container{
+     position: relative;
+     text-align: center;
+   }
+   .image{
+     display: block;
+     margin: 0 auto;
+     max-width: 100%;
+   }
+   .text{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    background-color: ivory;
+    color: black;
+    padding: 10px;
+   }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navfix">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/bright">밝기값 조회</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/front">전면 센서</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/back">후면 센서</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="http://localhost:3000/input_days.html">날짜별 조회</a>
+            </li>
+            <li class="nav=item">
+              <a class="nav-link " href="http://localhost:3000/help.html">소개</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+      <h1 style="text-align: center; margin: 0 auto">홈 화면 예시</h1>
+      <img class="image" src="./image/home1.png">
+    <div class="text">
+        <p>이 프로젝트는 조도센서값과 초음파 센서의 값을 받아와서,<br>
+            홈 화면을 통해 출력이 한눈에 볼수 있게끔 만드는 작업을 진행하였습니다. <br>
+            조도센서 값과 초음파센서 값 이 특정 값이 되면 각 요소에 설정 된 객체가 반응하게 됩니다.<br>
+            이로써 이 프로젝트를 통해 간단한 자동차 오토라이트 및 거리 감지 시스템을 구현하였고 <br>
+            이러한 시스템은 운전중에 안전을 강화하고 어두운 환경에서 더 나은 가시성을 제공합니다.<br>
+            또한 장애물 간의 거리 감지를 통해 운전자에게 경고를 제공하여 사고를 예방할수 있습니다.<br>
+            </p>
+            <h2 style="text-align: center; margin: 0 auto"> 각 센서의 값 기준 </h2>
+            <p>
+              조도센서 : 0~ 100 % 중 50% 이하가 되면 오토라이트 작동 <br>
+              초음파 센서: 앞, 뒤 두개 부착하여 앞 뒤 각각 경고등 점등<br>
+                 10cm 이하 이면 노란색 경고등 점등, 5cm 이하이면 주황색 경고등 점등, 3cm 이하이면 빨간색 경고등 점등. 
+            </p>
+    </div>
+  </div>
+</body>

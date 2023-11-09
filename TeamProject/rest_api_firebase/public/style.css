@@ -1,0 +1,249 @@
+.clock{
+    width:150px; 
+    height:150px; 
+    display:flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: 4px solid #091921;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 -5px 15px rgba(0,0,0,0.3),
+                inset 0 15px 15px rgba(0,0,0,0.3);
+    border-radius: 50%;
+    bottom:-15px;
+    position:absolute;
+    z-index:10000;
+    left: 6%;
+}
+.clockimg{
+    width:150px;
+    height:150px;
+    bottom:65px;
+    left:6%;
+    z-index: 10000;
+}
+
+.clock:before {
+    content: '';
+    position: absolute;
+    width:15px;
+    height:15px;    
+    background:#fff;
+    border-radius: 50%;
+    z-index : 10001;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec{
+    position: absolute;
+}
+
+.clock .hour .hr{
+    width : 70px;
+    height : 70px;
+}
+
+.clock .min .mn{
+    width : 120px;
+    height : 120px;
+}
+
+.clock .sec .sc{
+    width : 120px;
+    height : 120px;
+}
+
+.hr, .mn, .sc{
+    display:flex; 
+    justify-content: center; 
+    /* position: absolute; */
+    border-radius: 50%;
+}
+
+.hr:before{
+    content: '';
+    position: absolute;
+    width:8px;
+    height:50px;    
+    background:#ff105e;
+    z-index : 10001;
+    border-radius: 6px 6px 0 0;
+}
+
+.mn:before{
+    content: '';
+    position: absolute;
+    width:4px;
+    height:80px;    
+    background:#ff105e;
+    z-index : 10001;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc:before{
+    content: '';
+    position: absolute;
+    width:2px;
+    height:90px;    
+    background:#fff;
+    z-index : 10001;
+    border-radius: 6px 6px 0 0;
+}
+
+.headlightLon {
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50px 50px 0 0;
+    cursor: pointer;
+    z-index: 9996;
+    bottom: 180px;
+    left: 10%; 
+    position:absolute;
+    opacity: 0;
+}
+.headlightRon{
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50px 50px 0 0;
+    cursor: pointer;
+    z-index: 9996;
+    bottom: 180px;
+    right: 10%; 
+    position: absolute;
+    opacity: 0;
+}
+
+.headlightLoff {
+    width: 100px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50px 50px 0 0;
+    cursor: pointer;
+    z-index: 9996;
+    opacity: 1;
+    bottom: 180px;
+    left: 10%; 
+    position:absolute;
+}
+.headlightRoff {
+    width: 100px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50px 50px 0 0;
+    cursor: pointer;
+    z-index: 9996;
+    opacity: 1;
+    bottom: 180px;
+    right: 10%; 
+    position: absolute;
+}
+
+
+.headlight {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right:30%;
+    margin: auto;
+    z-index:9999;
+    bottom:30px;
+}
+.frontYellow{
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 30%;
+    margin: auto;
+    z-index:9999;
+    bottom:75px;
+}
+.frontOrange {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right:26%;
+    margin: auto;
+    z-index:9999;
+    bottom:30px;
+}
+.frontRed {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right:26%;
+    margin: auto;
+    z-index:9999;
+    bottom:75px;
+}
+.backYellow {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right:20%;
+    margin: auto;
+    z-index:9999;
+    bottom:75px;
+}
+.backOrange {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right:20%;
+    margin: auto;
+    z-index:9999;
+    bottom:30px;
+}
+.backRed {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right:16%;
+    margin: auto;
+    z-index:9999;
+    bottom:75px;
+}
+.img {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: -83px;
+    margin: auto;
+    z-index: 9997;
+}
+
+.myChart {
+    position: absolute;
+    bottom: 0px;
+    left: 20%;
+    margin: auto;
+    z-index: 9999;
+    align-items: center;
+}
+
+.myChart1 {
+    position: absolute;
+    bottom: 8px;
+    left: calc(50% - 200px);
+    margin: auto;
+    z-index: 9999;
+
+}
+
+.myChart2 {
+    position: absolute;
+    bottom: 8px;
+    right: 37%;
+    margin: auto;
+    z-index: 9999;
+   
+}
